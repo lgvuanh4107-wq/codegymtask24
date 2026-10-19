@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS | flex-flow Property - codegymtask24</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+            font-size: 20px;
+        }
+        
+        /* Cài đặt cho ví dụ 1: row nowrap */
+        .container-1 {
+            display: flex;
+            flex-flow: row nowrap;
+            background-color: #e9ecef;
+            border: 2px solid #ced4da;
+            margin-bottom: 30px;
+        }
+        .container-1 > div {
+            background-color: #007bff; /* Màu xanh dương */
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* Cài đặt cho ví dụ 2: row-reverse nowrap */
+        .container-2 {
+            display: flex;
+            flex-flow: row-reverse nowrap;
+            background-color: #e9ecef;
+            border: 2px solid #ced4da;
+        }
+        .container-2 > div {
+            background-color: #28a745; /* Màu xanh lá */
+            color: white;
+            width: 100px;
+            margin: 10px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Thực hành: CSS flex-flow (codegymtask24)</h1>
+
+    <h2>1. flex-flow: row nowrap (Mặc định: trái sang phải)</h2>
+    <div class="container-1">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+    <h2>2. flex-flow: row-reverse nowrap (Đảo ngược: phải sang trái)</h2>
+    <div class="container-2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+
+</body>
+</html>
